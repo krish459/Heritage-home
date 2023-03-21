@@ -67,7 +67,10 @@ const GalleryBox = () => {
                     alt="fp1.jpg"
                   />
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6" style={{
+                      padding: "20px",
+                      backgroundColor: "#f7f7f7",
+                    }}>
                   <div
                     className="card-body"
                     style={{

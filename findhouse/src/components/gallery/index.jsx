@@ -20,11 +20,26 @@ const index = () => {
       <PopupSignInUp />
 
       {/* <!-- Inner Page Breadcrumb --> */}
-      <BreadCrumbBanner />
+      {/* <BreadCrumbBanner />
+       */}
+
+        <div className="row" style={{marginTop:"5rem"}}>
+          <div className="col-xl-6">
+            <div className="breadcrumb_content">
+              {/* <BreadCrumb title="gallery" /> */}
+              {/* <h4 className="breadcrumb_title">Property plans</h4> */}
+            </div>
+          </div>
+          {/* End .col */}
+        </div>
+      
 
       {/* <!-- About Text Content --> */}
       <section className="about-section pb30">
         <div className="container">
+          <div className="text-center" style={{marginBottom:"2rem"}}>
+            <h1>Property Plans</h1>
+          </div>
           <div className="row">
             <GalleryBox />
           </div>
