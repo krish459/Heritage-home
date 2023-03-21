@@ -6,6 +6,7 @@ import PopupSignInUp from "../common/PopupSignInUp";
 import BreadCrumbBanner from "./BreadCrumbBanner";
 import GalleryBox from "./GalleryBox";
 
+
 const index = () => {
   return (
     <>
