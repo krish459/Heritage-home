@@ -4,15 +4,14 @@ const HeroFilter = () => {
     return (
         <div className="home_content">
             <div className="home-text text-center">
-                <h2 className="fz55">Find Your Dream Home</h2>
+                <h2 className="fz55">Heritage Homes</h2>
                 <p className="fz18 color-white">
-                    From as low as $10 per day with limited time offer
-                    discounts.
+                    PREMIUM 1 & 2 BHK HOMES
                 </p>
             </div>
             {/* End .home-text */}
 
-            <GlobalHeroFilter />
+            {/* <GlobalHeroFilter /> */}
         </div>
     );
 };

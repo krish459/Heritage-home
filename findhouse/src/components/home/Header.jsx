@@ -28,17 +28,18 @@ const Header = () => {
 
         <Link href="/">
           <a className="navbar_brand float-start dn-smd">
+            {/* get heritage home icon here */}
             <img
               className="logo1 img-fluid"
               src="/assets/images/header-logo.png"
               alt="header-logo.png"
             />
-            <img
+            {/* <img
               className="logo2 img-fluid"
               src="/assets/images/header-logo2.png"
               alt="header-logo2.png"
-            />
-            <span>FindHouse</span>
+            /> */}
+            <span>Heritage Homes</span>
           </a>
         </Link>
         {/* site logo brand */}

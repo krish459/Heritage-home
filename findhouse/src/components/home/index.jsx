@@ -28,7 +28,7 @@ const Index = () => {
       <Hero />
 
       {/* <!-- Feature Properties --> */}
-      <section id="feature-property" className="feature-property bgc-f7">
+      {/* <section id="feature-property" className="feature-property bgc-f7">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
@@ -44,10 +44,10 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <!-- Property Cities --> */}
-      <section id="property-city" className="property-city pb30">
+      {/* <section id="property-city" className="property-city pb30">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
@@ -61,7 +61,7 @@ const Index = () => {
             <FindProperties />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <!-- Why Chose Us --> */}
       {/* <section id="why-chose" className="whychose_us bgc-f7 pb30">
@@ -82,14 +82,12 @@ const Index = () => {
 
       <section id="property-city" className="property-city pb30">
         <div className="container">
-          <div className="row features_row">
-            <LookingItem />
-          </div>
+          
 
-          <div className="row">
+        <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2>Find Properties in These Cities</h2>
+                <h2>Typical Floor Plan</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
@@ -100,10 +98,21 @@ const Index = () => {
             <FindProperties />
           </div>
           {/* End .row */}
+          <div className="row"  style={{marginTop:"2rem"}}>
+            <div className="col-lg-6 offset-lg-3">
+              <div className="main-title text-center">
+                <h2>Internal Amenities</h2>
+                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
+              </div>
+            </div>
+          </div>
+        <div className="row features_row"  style={{marginTop:"0.2rem"}}>
+            <LookingItem />
+          </div>
         </div>
       </section>
       {/* <!-- Our Blog --> */}
-      <section className="our-blog bgc-f7 pb30">
+      {/* <section className="our-blog bgc-f7 pb30">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
@@ -117,10 +126,10 @@ const Index = () => {
             <Blogs />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <!-- Our Partners --> */}
-      <section id="our-partners" className="our-partners">
+      {/* <section id="our-partners" className="our-partners">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
@@ -134,14 +143,14 @@ const Index = () => {
             <Partners />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <!-- Start Call to Action --> */}
-      <section className="start-partners bgc-thm pt50 pb50">
+      {/* <section className="start-partners bgc-thm pt50 pb50">
         <div className="container">
           <CallToAction />
         </div>
-      </section>
+      </section> */}
 
       {/* <!-- Our Footer --> */}
       <section className="footer_one">

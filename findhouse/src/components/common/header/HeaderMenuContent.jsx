@@ -4,12 +4,12 @@ import { useRouter } from "next/router";
 const HeaderMenuContent = ({ float = "" }) => {
   const route = useRouter();
 
-  const home = [
-    {
-      id: 1,
-      name: "Home 1",
-      routerPath: "/",
-    },
+  // const home = [
+    // {
+    //   id: 1,
+    //   name: "Home 1",
+    //   routerPath: "/",
+    // },
     // { id: 2, name: "Home 2", routerPath: "/home-2" },
     // {
     //   id: 3,
@@ -23,7 +23,7 @@ const HeaderMenuContent = ({ float = "" }) => {
     // { id: 8, name: "Home 8", routerPath: "/home-8" },
     // { id: 9, name: "Home 9", routerPath: "/home-9" },
     // { id: 10, name: "Home 10", routerPath: "/home-10" },
-  ];
+  // ];
 
   // const listing = [
   //   {
@@ -224,8 +224,8 @@ const HeaderMenuContent = ({ float = "" }) => {
 
   const pages = [
     // { id: 1, name: "About Us", routerPath: "/about-us" },
-    { id: 2, name: "Gallery", routerPath: "/gallery" },
-    // { id: 3, name: "Faq", routerPath: "/faq" },
+    // { id: 2, name: "Plans", routerPath: "/gallery" },
+    // { id: 3, name: "Faq", routerPath: "/faq" },                                                                                                                                                                                                                                  
     // { id: 4, name: "LogIn", routerPath: "/login" },
     // { id: 5, name: "Compare", routerPath: "/compare" },
     // { id: 6, name: "Membership", routerPath: "/membership" },
@@ -242,7 +242,7 @@ const HeaderMenuContent = ({ float = "" }) => {
       className="ace-responsive-menu text-end d-lg-block d-none"
       data-menu-style="horizontal"
     >
-      <li className="dropitem">
+      {/* <li className="dropitem">
         <a
           href="#"
           className={
@@ -254,7 +254,7 @@ const HeaderMenuContent = ({ float = "" }) => {
           <span className="title">Home</span>
           <span className="arrow"></span>
         </a>
-        {/* <!-- Level Two--> */}
+        <!-- Level Two-->
 
         <ul className="sub-menu ">
           {home.map((item) => (
@@ -271,7 +271,7 @@ const HeaderMenuContent = ({ float = "" }) => {
             </li>
           ))}
         </ul>
-      </li>
+      </li> */}
       {/* End .dropitem */}
 
       {/* <li className="dropitem">
@@ -388,7 +388,7 @@ const HeaderMenuContent = ({ float = "" }) => {
       </li> */}
       {/* End .dropitem */}
 
-      <li className="dropitem">
+      {/* <li className="dropitem">
         <a
           href="#"
           className={
@@ -415,7 +415,7 @@ const HeaderMenuContent = ({ float = "" }) => {
             </li>
           ))}
         </ul>
-      </li>
+      </li> */}
       {/* End .dropitem */}
 
       {/* <li className="dropitem">
@@ -455,15 +455,24 @@ const HeaderMenuContent = ({ float = "" }) => {
       </li> */}
       {/* End .dropitem */}
 
-      {/* <li className="last">
-        <Link href="/contact">
+      <li className="last">
+        <Link href="/">
           <a
-            className={route.pathname === "/contact" ? "ui-active" : undefined}
+            className={route.pathname === "/" ? "ui-active" : undefined}
           >
-            Contact
+            Home
           </a>
         </Link>
-      </li> */}
+      </li>
+      <li className="last">
+        <Link href="/gallery">
+          <a
+            className={route.pathname === "/gallery" ? "ui-active" : undefined}
+          >
+            Property Plans
+          </a>
+        </Link>
+      </li>
       {/* End .dropitem */}
 
       <li className={`list-inline-item list_s ${float}`}>
