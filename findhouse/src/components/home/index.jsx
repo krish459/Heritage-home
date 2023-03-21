@@ -28,40 +28,21 @@ const Index = () => {
       <Hero />
 
       {/* <!-- Feature Properties --> */}
-      {/* <section id="feature-property" className="feature-property bgc-f7">
+      <section id="feature-property" className="feature-property bgc-f7">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center mb40">
-                <h2>Featured Properties</h2>
-                <p>Handpicked properties by our team.</p>
+                <h2 style={{color:"black", marginBottom:"20px"}}>PRESERVING PRIZED CLASS</h2>
+                <p style={{color:"gray", textAlign:"center"}}>Just like old classic heritage needs to be preserved to have a look at where we come from, Heritage Homes gives a unique opportunity to bring together modern advanced technology and the priceless richness of heritage. It's a place for keeping in touch with the past while moving on to a bright future, taking steps along with the fast-paced new-age world.</p>
               </div>
             </div>
-            <div className="col-lg-12">
-              <div className="feature_property_slider gutter-x15">
-                <FeaturedProperties />
-              </div>
-            </div>
+            
           </div>
         </div>
-      </section> */}
+      </section>
 
-      {/* <!-- Property Cities --> */}
-      {/* <section id="property-city" className="property-city pb30">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 offset-lg-3">
-              <div className="main-title text-center">
-                <h2>Find Properties in These Cities</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <FindProperties />
-          </div>
-        </div>
-      </section> */}
+      {/*  */}
 
       {/* <!-- Why Chose Us --> */}
       {/* <section id="why-chose" className="whychose_us bgc-f7 pb30">
@@ -88,7 +69,7 @@ const Index = () => {
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
                 <h2>Typical Floor Plan</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Enjoy the enticing beauty of classic structures that complement magnificent advanced designs. A residential complex that provides top-class lifestyle.</p>
               </div>
             </div>
           </div>
@@ -102,7 +83,6 @@ const Index = () => {
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
                 <h2>Internal Amenities</h2>
-                {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
               </div>
             </div>
           </div>
@@ -111,46 +91,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      {/* <!-- Our Blog --> */}
-      {/* <section className="our-blog bgc-f7 pb30">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 offset-lg-3">
-              <div className="main-title text-center">
-                <h2>Articles & Tips</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <Blogs />
-          </div>
-        </div>
-      </section> */}
-
-      {/* <!-- Our Partners --> */}
-      {/* <section id="our-partners" className="our-partners">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 offset-lg-3">
-              <div className="main-title text-center">
-                <h2>Our Partners</h2>
-                <p>We only work with the best companies around the globe</p>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <Partners />
-          </div>
-        </div>
-      </section> */}
-
-      {/* <!-- Start Call to Action --> */}
-      {/* <section className="start-partners bgc-thm pt50 pb50">
-        <div className="container">
-          <CallToAction />
-        </div>
-      </section> */}
+     
 
       {/* <!-- Our Footer --> */}
       <section className="footer_one">
