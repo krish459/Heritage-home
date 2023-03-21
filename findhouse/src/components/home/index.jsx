@@ -11,8 +11,66 @@ import Hero from "./Hero";
 import WhyChoose from "../common/WhyChoose";
 import PopupSignInUp from "../common/PopupSignInUp";
 import LookingItem from "../home-6/LookingItem";
+import FeaturesPlans from "../compare/FeaturesPlans";
 
 const Index = () => {
+
+  const projectsHighlight = [
+    {
+      id: 1,
+      title: "Entrance Lobby",
+      icon: "flaticon-house",
+      text: `Earthquake resistance R.C.. Framed Structure`,
+    },
+    {
+      id: 2,
+      title: "Family House",
+      icon: "flaticon-house-1",
+      text: `Aliquam dictum elit vitae mauris facilisis, at dictum urna.`,
+    },
+    {
+      id: 3,
+      title: "Town House",
+      icon: "flaticon-house-2",
+      text: `Aliquam dictum elit vitae mauris facilisis, at dictum urna.`,
+    },
+    {
+      id: 4,
+      title: "Apartment",
+      icon: "flaticon-building",
+      text: `Aliquam dictum elit vitae mauris facilisis, at dictum urna.`,
+    },
+    {
+      id: 1,
+      title: "Modern Villa",
+      icon: "flaticon-house",
+      text: `Aliquam dictum elit vitae mauris facilisis, at dictum urna.`,
+    },
+    {
+      id: 2,
+      title: "Family House",
+      icon: "flaticon-house-1",
+      text: `Aliquam dictum elit vitae mauris facilisis, at dictum urna.`,
+    },
+    {
+      id: 3,
+      title: "Town House",
+      icon: "flaticon-house-2",
+      text: `Aliquam dictum elit vitae mauris facilisis, at dictum urna.`,
+    },
+    {
+      id: 4,
+      title: "Apartment",
+      icon: "flaticon-building",
+      text: `Aliquam dictum elit vitae mauris facilisis, at dictum urna.`,
+    },
+    {
+      id: 4,
+      title: "Apartment",
+      icon: "flaticon-building",
+      text: `Aliquam dictum elit vitae mauris facilisis, at dictum urna.`,
+    },
+  ];
   return (
     <>
       {/* <!-- Main Header Nav --> */}
@@ -82,12 +140,12 @@ const Index = () => {
           <div className="row"  style={{marginTop:"2rem"}}>
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2>Internal Amenities</h2>
+                <h2>Project's highlight features</h2>
               </div>
             </div>
           </div>
         <div className="row features_row"  style={{marginTop:"0.2rem"}}>
-            <LookingItem />
+            <FeaturesPlans find={projectsHighlight}/>
           </div>
         </div>
       </section>

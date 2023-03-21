@@ -1,13 +1,71 @@
-import CallToAction from "../common/CallToAction";
 import CopyrightFooter from "../common/footer/CopyrightFooter";
 import Footer from "../common/footer/Footer";
 import Header from "../common/header/DefaultHeader";
 import MobileMenu from "../common/header/MobileMenu";
 import PopupSignInUp from "../common/PopupSignInUp";
-import BreadCrumbBanner from "./BreadCrumbBanner";
-import ComparePricing from "./ComparePricing";
+import LookingItem from "../home-6/LookingItem";
+import FeaturesPlans from "./FeaturesPlans";
+// import BreadCrumbBanner from "./BreadCrumbBanner";
+// import GalleryBox from "./GalleryBox";
 
 const index = () => {
+
+  const proximity=[
+    {
+      id: 1,
+      title: "Sawantwadi Lake",
+      icon: "flaticon-house",
+      text: `1 Kilometer`,
+    },
+    {
+      id: 2,
+      title: "Sawantwadi Market",
+      icon: "flaticon-house-1",
+      text: `1.3 Kilometer`,
+    },
+    {
+      id: 3,
+      title: "Town House",
+      icon: "flaticon-house-2",
+      text: `Aliquam dictum elit vitae mauris facilisis, at dictum urna.`,
+    },
+    {
+      id: 4,
+      title: "Apartment",
+      icon: "flaticon-building",
+      text: `Aliquam dictum elit vitae mauris facilisis, at dictum urna.`,
+    },
+    {
+      id: 1,
+      title: "Modern Villa",
+      icon: "flaticon-house",
+      text: `Aliquam dictum elit vitae mauris facilisis, at dictum urna.`,
+    },
+    {
+      id: 2,
+      title: "Family House",
+      icon: "flaticon-house-1",
+      text: `Aliquam dictum elit vitae mauris facilisis, at dictum urna.`,
+    },
+    {
+      id: 3,
+      title: "Town House",
+      icon: "flaticon-house-2",
+      text: `Aliquam dictum elit vitae mauris facilisis, at dictum urna.`,
+    },
+    {
+      id: 4,
+      title: "Apartment",
+      icon: "flaticon-building",
+      text: `Aliquam dictum elit vitae mauris facilisis, at dictum urna.`,
+    },
+    {
+      id: 4,
+      title: "Apartment",
+      icon: "flaticon-building",
+      text: `Aliquam dictum elit vitae mauris facilisis, at dictum urna.`,
+    },
+  ]
   return (
     <>
       {/* <!-- Main Header Nav --> */}
@@ -20,50 +78,46 @@ const index = () => {
       <PopupSignInUp />
 
       {/* <!-- Inner Page Breadcrumb --> */}
-      <BreadCrumbBanner />
+      {/* <BreadCrumbBanner />
+       */}
 
-      {/* <!-- Our Pricing Table --> */}
-      <section className="our-pricing bgc-fa">
+      <div className="row" style={{ marginTop: "5rem" }}>
+        <div className="col-xl-6">
+          <div className="breadcrumb_content">
+            {/* <BreadCrumb title="gallery" /> */}
+            {/* <h4 className="breadcrumb_title">Property plans</h4> */}
+          </div>
+        </div>
+        {/* End .col */}
+      </div>
+
+      {/* <!-- About Text Content --> */}
+      
+
+      <section id="property-city" className="property-city pb30">
         <div className="container">
-          <div className="row">
+          <div className="row" style={{ marginTop: "2rem" }}>
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2>Compare Listings</h2>
-                <p>We provide full service at every step</p>
+                <h2>Internal Amenities</h2>
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="membership_container">
-                <ul className="mc_parent_list">
-                  <li className="list-inline-item">
-                    <ul className="mc_child_list one">
-                      <li>
-                        <div className="membership_header dn"></div>
-                      </li>
-                      <li>City</li>
-                      <li>Beds</li>
-                      <li>Rooms</li>
-                      <li>Garage</li>
-                      <li>Year of build</li>
-                      <li>Laundry Room</li>
-                      <li>Status</li>
-                    </ul>
-                  </li>
-                  <ComparePricing />
-                </ul>
-                {/* End .mc_parent_list */}
-              </div>
-            </div>
+          <div className="row features_row" style={{ marginTop: "0.2rem" }}>
+            <LookingItem />
           </div>
         </div>
       </section>
 
-      {/* <!-- Start Call to Action --> */}
-      <section className="start-partners bgc-thm pt50 pb50">
+      <section className="about-section pb30">
         <div className="container">
-          <CallToAction />
+          <div className="text-center" style={{ marginBottom: "2rem" }}>
+            <h1>Proximity Areas from peaceful residencial locations</h1>
+          </div>
+          <div className="row">
+            {/* <GalleryBox /> */}
+            <FeaturesPlans find={proximity}/>
+          </div>
         </div>
       </section>
 

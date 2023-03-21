@@ -3,6 +3,7 @@ import Footer from "../common/footer/Footer";
 import Header from "../common/header/DefaultHeader";
 import MobileMenu from "../common/header/MobileMenu";
 import PopupSignInUp from "../common/PopupSignInUp";
+import FeaturesPlans from "../compare/FeaturesPlans";
 import BreadCrumbBanner from "./BreadCrumbBanner";
 import GalleryBox from "./GalleryBox";
 
@@ -20,7 +21,8 @@ const index = () => {
       <PopupSignInUp />
 
       {/* <!-- Inner Page Breadcrumb --> */}
-      {/* <BreadCrumbBanner />*/}
+      {/* <BreadCrumbBanner />
+       */}
 
         <div className="row" style={{marginTop:"5rem"}}>
           <div className="col-xl-6">
@@ -37,10 +39,11 @@ const index = () => {
       <section className="about-section pb30">
         <div className="container">
           <div className="text-center" style={{marginBottom:"2rem"}}>
-            <h1>Property Plans</h1>
+            <h1>features</h1>
           </div>
           <div className="row">
-            <GalleryBox />
+            {/* <GalleryBox /> */}
+            <FeaturesPlans/>
           </div>
         </div>
       </section>

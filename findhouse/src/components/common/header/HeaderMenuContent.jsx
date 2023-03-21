@@ -473,6 +473,15 @@ const HeaderMenuContent = ({ float = "" }) => {
           </a>
         </Link>
       </li>
+      <li className="last">
+        <Link href="/compare">
+          <a
+            className={route.pathname === "/compare" ? "ui-active" : undefined}
+          >
+            Features
+          </a>
+        </Link>
+      </li>
       {/* End .dropitem */}
 
       <li className={`list-inline-item list_s ${float}`}>
