@@ -20,7 +20,7 @@ const FeaturesPlans = ({ find }) => {
                   marginRight: "10px",
                 }}
               >
-                <span className={item.icon}></span>
+                <span  style={{alignItems:"center", justifyContent:"center"}}>{item.icon}</span>
               </div>
               <div
                 className="details"

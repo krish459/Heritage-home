@@ -21,7 +21,7 @@ const LoginSignup = () => {
                             id="myTab"
                             role="tablist"
                         >
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <a
                                     className="nav-link active"
                                     id="home-tab"
@@ -31,12 +31,12 @@ const LoginSignup = () => {
                                     aria-controls="home"
                                     aria-selected="true"
                                 >
-                                    Login
+                                    Contact Us
                                 </a>
-                            </li>
+                            </li> */}
                             {/* End login tab */}
 
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <a
                                     className="nav-link"
                                     id="profile-tab"
@@ -48,7 +48,7 @@ const LoginSignup = () => {
                                 >
                                     Register
                                 </a>
-                            </li>
+                            </li> */}
                             {/* End Register tab */}
                         </ul>
                         {/* End .sign_up_tab */}
@@ -78,11 +78,11 @@ const LoginSignup = () => {
                             <div className="login_form">
                                 <form action="#">
                                     <div className="heading">
-                                        <h4>Login</h4>
+                                        <h4>Contact Form</h4>
                                     </div>
                                     {/* End heading */}
 
-                                    <div className="row mt25">
+                                    {/* <div className="row mt25">
                                         <div className="col-lg-12">
                                             <button
                                                 type="submit"
@@ -101,7 +101,7 @@ const LoginSignup = () => {
                                                 Login with Google
                                             </button>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     {/* End .row */}
 
                                     <hr />
@@ -110,8 +110,34 @@ const LoginSignup = () => {
                                         <input
                                             type="text"
                                             className="form-control"
+                                            id="inlineFormInputGroupName"
+                                            placeholder="Name"
+                                        />
+                                        <div className="input-group-prepend">
+                                            <div className="input-group-text">
+                                                <i className="flaticon-user"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="input-group mb-2 mr-sm-2">
+                                        <input
+                                            type="text"
+                                            className="form-control"
                                             id="inlineFormInputGroupUsername2"
-                                            placeholder="User Name Or Email"
+                                            placeholder="Email"
+                                        />
+                                        <div className="input-group-prepend">
+                                            <div className="input-group-text">
+                                                <i className="flaticon-user"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="input-group mb-2 mr-sm-2">
+                                        <input
+                                            type="text"
+                                            className="form-control"
+                                            id="inlineFormInputGroupUsername2"
+                                            placeholder="Description"
                                         />
                                         <div className="input-group-prepend">
                                             <div className="input-group-text">
@@ -121,7 +147,7 @@ const LoginSignup = () => {
                                     </div>
                                     {/* End input-group */}
 
-                                    <div className="input-group form-group">
+                                    {/* <div className="input-group form-group">
                                         <input
                                             type="password"
                                             className="form-control"
@@ -133,10 +159,10 @@ const LoginSignup = () => {
                                                 <i className="flaticon-password"></i>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     {/* End input-group */}
 
-                                    <div className="form-group form-check custom-checkbox mb-3">
+                                    {/* <div className="form-group form-check custom-checkbox mb-3">
                                         <input
                                             className="form-check-input"
                                             type="checkbox"
@@ -156,23 +182,23 @@ const LoginSignup = () => {
                                         >
                                             Lost your password?
                                         </a>
-                                    </div>
+                                    </div> */}
                                     {/* End remember me checkbox */}
 
                                     <button
                                         type="submit"
                                         className="btn btn-log w-100 btn-thm"
                                     >
-                                        Log In
+                                        Submit
                                     </button>
                                     {/* End submit button */}
 
-                                    <p className="text-center">
+                                    {/* <p className="text-center">
                                         Dont have an account?{" "}
                                         <a className="text-thm" href="#">
                                             Register
                                         </a>
-                                    </p>
+                                    </p> */}
                                 </form>
                             </div>
                             {/* End .col .login_form */}

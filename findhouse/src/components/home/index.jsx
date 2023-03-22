@@ -13,55 +13,65 @@ import PopupSignInUp from "../common/PopupSignInUp";
 import LookingItem from "../home-6/LookingItem";
 import FeaturesPlans from "../compare/FeaturesPlans";
 
-const Index = () => {
+// react icons
+import {
+  AiOutlineHome,
+  AiOutlineBuilding,
+  AiOutlineSecurityScan,
+} from "react-icons/ai";
+import { AiOutlineVerticalAlignTop } from "react-icons/ai";
+import { AiOutlineCar,AiOutlineSmile, AiOutlineMeh, AiOutlineBench,AiOutlineBank } from "react-icons/ai";
+import { FiActivity } from "react-icons/fi";
+import { BiChair } from "react-icons/bi";
 
-  const projectsHighlight = [
-    {
-      id: 1,
-      title: "Entrance Lobby",
-      icon: "flaticon-house",
-    },
-    {
-      id: 2,
-      title: "Branded Elevator",
-      icon: "flaticon-house-1",
-    },
-    {
-      id: 3,
-      title: "CCTV & 24x7 Security",
-      icon: "flaticon-house-2",
-    },
-    {
-      id: 4,
-      title: "Ample Car Parking",
-      icon: "flaticon-building",
-    },
-    {
-      id: 5,
-      title: "Kid's Fun Area",
-      icon: "flaticon-house",
-    },
-    {
-      id: 6,
-      title: "Meditation Area",
-      icon: "flaticon-house-1",
-    },
-    {
-      id: 7,
-      title: "Seating Area",
-      icon: "flaticon-house-2",
-    },
-    {
-      id: 8,
-      title: "Jogging Track",
-      icon: "flaticon-building",
-    },
-    {
-      id: 9,
-      title: "Society Office",
-      icon: "flaticon-building",
-    },
-  ];
+const Index = () => {
+const projectsHighlight = [
+  {
+    id: 1,
+    title: "Entrance Lobby",
+    icon: <AiOutlineHome />,
+  },
+  {
+    id: 2,
+    title: "Branded Elevator",
+    icon: <AiOutlineVerticalAlignTop />,
+  },
+  {
+    id: 3,
+    title: "CCTV & 24x7 Security",
+    icon: <AiOutlineSecurityScan />,
+  },
+  {
+    id: 4,
+    title: "Ample Car Parking",
+    icon: <AiOutlineCar />,
+  },
+  {
+    id: 5,
+    title: "Kid's Fun Area",
+    icon: <AiOutlineSmile />,
+  },
+  {
+    id: 6,
+    title: "Meditation Area",
+    icon: <AiOutlineMeh />,
+  },
+  {
+    id: 7,
+    title: "Seating Area",
+    icon: <BiChair />,
+  },
+  {
+    id: 8,
+    title: "Jogging Track",
+    icon: <FiActivity />,
+  },
+  {
+    id: 9,
+    title: "Society Office",
+    icon: <AiOutlineBank />,
+  },
+];
   return (
     <>
       {/* <!-- Main Header Nav --> */}
