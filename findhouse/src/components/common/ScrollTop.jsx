@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,6 +30,20 @@ export default function ScrollToTop() {
 
   return (
     <>
+      <div
+        className="scrollToHome"
+        style={{
+          marginBottom: "5rem",
+          backgroundColor: "green",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <a href="https://api.whatsapp.com/send?phone=8169110810" target="_blank" style={{color:"white"}}>
+          <FaWhatsapp size={40} />
+        </a>
+      </div>
       {isVisible && (
         <>
           <div className="scrollToHome" onClick={scrollToTop}>

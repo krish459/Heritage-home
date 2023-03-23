@@ -7,15 +7,15 @@ const Hero = () => {
     <section className="home-one home1-overlay">
       <Carousel>
         <Carousel.Item>
-        <div className=" home1_bgi1">
-              <div className="container">
-                <div className="row posr">
-                  <div className="col-lg-12">
-                    <HeroFilter />
-                  </div>
+          <div className=" home1_bgi1">
+            <div className="container">
+              <div className="row posr">
+                <div className="col-lg-12">
+                  <HeroFilter />
                 </div>
               </div>
-            
+            </div>
+
             {/* End .container */}
             <div className="mouse_scroll">
               <a href="#feature-property">
@@ -28,18 +28,18 @@ const Hero = () => {
                 </div>
               </a>
             </div>
-            </div>
+          </div>
         </Carousel.Item>
         <Carousel.Item>
-        <div className="home1_bgi2">
-              <div className="container">
-                <div className="row posr">
-                  <div className="col-lg-12">
-                    <HeroFilter />
-                  </div>
+          <div className="home1_bgi2">
+            <div className="container">
+              <div className="row posr">
+                <div className="col-lg-12">
+                  <HeroFilter />
                 </div>
               </div>
-            
+            </div>
+
             {/* End .container */}
             <div className="mouse_scroll">
               <a href="#feature-property">
@@ -52,18 +52,18 @@ const Hero = () => {
                 </div>
               </a>
             </div>
-            </div>
+          </div>
         </Carousel.Item>
         <Carousel.Item>
-        <div className=" home1_bgi3">
-              <div className="container">
-                <div className="row posr">
-                  <div className="col-lg-12">
-                    <HeroFilter />
-                  </div>
+          <div className=" home1_bgi3">
+            <div className="container">
+              <div className="row posr">
+                <div className="col-lg-12">
+                  <HeroFilter />
                 </div>
               </div>
-            
+            </div>
+
             {/* End .container */}
             <div className="mouse_scroll">
               <a href="#feature-property">
@@ -76,7 +76,7 @@ const Hero = () => {
                 </div>
               </a>
             </div>
-            </div>
+          </div>
         </Carousel.Item>
       </Carousel>
     </section>

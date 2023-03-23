@@ -17528,13 +17528,13 @@ section {
   bottom: 15px;
   color: #eee;
   font-size: 14px;
-  height: 45px;
+  height: 55px;
   line-height: 40px;
   padding: 3px 10px;
   position: fixed;
   right: 20px;
   text-align: center;
-  width: 45px;
+  width: 55px;
   z-index: 99999;
   transition: all 0.3s ease-in-out;
 }
