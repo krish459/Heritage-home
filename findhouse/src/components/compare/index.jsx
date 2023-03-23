@@ -105,7 +105,7 @@ const index = () => {
     {
       id: 1,
       title: "Structure",
-      icon: <FaHome />,
+      icon: <FaHome/>,
       text: `Earthquake resistant R.C.C Framed Structure.`,
     },
     {
@@ -150,7 +150,6 @@ const index = () => {
       icon: <FaToilet />,
       text: `Full height designer tiles on walls. Anti-skid ceramic floor tiles in all toilets.
       Branded sanitary ware and CP fittings.
-      Hot & cold water mixer shower panel in all toilet.
       `,
     },
   ]

@@ -4,7 +4,7 @@ const LookingItem = ({find}) => {
   return (
     <>
       {find.map((item) => (
-        <div className="col-sm-6 col-lg-3 col-xl-3 p0" key={item.id}>
+        <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 p2 " key={item.id}>
           <div className="why_chose_us home6">
             <div className="icon">
               <span className={item.icon}>{item.icon}</span>

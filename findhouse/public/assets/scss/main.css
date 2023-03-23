@@ -4121,6 +4121,13 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
     display: none;
   }
 }
+@media (max-width: 576px) {
+  .max-width-small {
+    max-width: 155px;
+    min-height:450px;
+  }
+}
+
 .row_style.home8 {
   bottom: -8px;
   left: -15px;
@@ -7026,10 +7033,31 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   position: relative;
   text-align: center;
   transition: all 0.3s ease;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.details {
+  opacity: 0; /* hide the details by default */
+  transition: opacity 0.2s ease-in-out; /* add transition animation */
+}
+
+.why_chose_us:hover .details {
+  /* opacity: 1; show the details on hover */
+  opacity: 10;
 }
 
 .why_chose_us:hover {
   box-shadow: 0px 0px 50px 0px rgba(19, 19, 28, 0.12);
+  transform: translateY(-10px);
+
 }
 
 .why_chose_us .icon {
@@ -7057,7 +7085,15 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
 }
 
 .why_chose_us .details {
-  margin-top: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  text-align: center;
 }
 
 .why_chose_us .details h4 {
