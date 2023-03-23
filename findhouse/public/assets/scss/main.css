@@ -4223,6 +4223,23 @@ form.home5_advanced_search_form .form-group input.form-control::-ms-input-placeh
   height: 960px;
 }
 
+/* footer image */
+.footerImage{
+    background-image: url('../images/heri_Image/AVD_GROUP1.png');
+    height: 150px;
+    width: 290px;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 1rem;
+}
+/* .footerImage{
+  background-image: url('../images/heri_Image/AVD_GROUP1.png');
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+
 .home1-overlay {
   position: relative;
 }
