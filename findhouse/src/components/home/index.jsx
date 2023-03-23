@@ -92,11 +92,10 @@ const projectsHighlight = [
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center mb40">
-                <h2 style={{color:"black", marginBottom:"20px"}}>PRESERVING PRIZED CLASS</h2>
-                <p style={{color:"gray", textAlign:"center"}}>Just like old classic heritage needs to be preserved to have a look at where we come from, Heritage Homes gives a unique opportunity to bring together modern advanced technology and the priceless richness of heritage. It's a place for keeping in touch with the past while moving on to a bright future, taking steps along with the fast-paced new-age world.</p>
+                <h2 style={{color:"black", marginBottom:"20px", fontFamily: 'Montserrat'}}>PRESERVING PRIZED CLASS</h2>
+                <p style={{color:"gray", textAlign:"center", fontFamily: 'Montserrat', fontSize:"1.2rem"}}>Just like old classic heritage needs to be preserved to have a look at where we come from, Heritage Homes gives a unique opportunity to bring together modern advanced technology and the priceless richness of heritage. It's a place for keeping in touch with the past while moving on to a bright future, taking steps along with the fast-paced new-age world.</p>
               </div>
             </div>
-            
           </div>
         </div>
       </section>
@@ -127,8 +126,8 @@ const projectsHighlight = [
         <div className="row">
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2>Typical Floor Plan</h2>
-                <p>Enjoy the enticing beauty of classic structures that complement magnificent advanced designs. A residential complex that provides top-class lifestyle.</p>
+                <h2 style={{color:"black", fontFamily: 'Montserrat'}}>Typical Floor Plan</h2>
+                <p style={{color:"gray", textAlign:"center", fontFamily: 'Montserrat', fontSize:"1.2rem"}}>Enjoy the enticing beauty of classic structures that complement magnificent advanced designs. A residential complex that provides top-class lifestyle.</p>
               </div>
             </div>
           </div>
@@ -141,7 +140,7 @@ const projectsHighlight = [
           <div className="row"  style={{marginTop:"2rem"}}>
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2>Project's highlight features</h2>
+                <h2 style={{color:"black", fontFamily: 'Montserrat'}}>Project's highlight features</h2>
               </div>
             </div>
           </div>

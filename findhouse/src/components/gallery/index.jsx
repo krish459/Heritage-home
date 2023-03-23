@@ -36,8 +36,8 @@ const index = () => {
       {/* <!-- About Text Content --> */}
       <section className="about-section pb30">
         <div className="container">
-          <div className="text-center" style={{marginBottom:"2rem"}}>
-            <h1>Property Plans</h1>
+          <div className="text-center" style={{marginBottom:"1rem"}}>
+            <h1 style={{color:"black", fontFamily: 'Montserrat'}}>Property Plans</h1>
           </div>
           <div className="row">
             <GalleryBox />

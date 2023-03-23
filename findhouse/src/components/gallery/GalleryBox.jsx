@@ -137,47 +137,46 @@ const GalleryBox = () => {
         ))}
       </div> */}
       <div className="row row-cols-1 row-cols-md-2 g-4">
-  {galleryContent.map((singleItem) => (
-    <div className="col" key={singleItem.id}>
-      <div className="card h-100">
-        <img
-          src={singleItem.img}
-          className="card-img-top"
-          alt="fp1.jpg"
-          style={{ height: "300px", objectFit: "cover" }}
-        />
-        <div className="card-body">
-          <h5 className="card-title">Wing: {singleItem.wing}</h5>
-          <p className="card-text">
-            <span>Sqft:</span> {singleItem.sqft}
-          </p>
-          <p className="card-text">
-            <span>BHK:</span> {singleItem.bhk}
-          </p>
-          <p className="card-text">
-            <span>Flat No:</span> {singleItem.flatNo}
-          </p>
-        </div>
-        <div className="card-footer">
-          <a
-            href="#"
-            className="btn btn-primary"
-            style={{
-              backgroundColor: "#1e2a4a",
-              borderColor: " #1e2a4a",
-              padding: "10px 20px",
-              fontSize: "18px",
-              margin:"auto"
-            }}
-          >
-            View Details
-          </a>
-        </div>
+        {galleryContent.map((singleItem) => (
+          <div className="col" key={singleItem.id}>
+            <div className="card h-100">
+              <img
+                src={singleItem.img}
+                className="card-img-top"
+                alt="fp1.jpg"
+                style={{ height: "300px", objectFit: "cover" }}
+              />
+              <div className="card-body">
+                <h5 className="card-title" style={{color:"black", fontFamily: 'Montserrat'}}>Wing: {singleItem.wing}</h5>
+                <p className="card-text" style={{color:"black", fontFamily: 'Montserrat'}}>
+                  <span>Sqft:</span> {singleItem.sqft}
+                </p>
+                <p className="card-text" style={{color:"black", fontFamily: 'Montserrat'}}>
+                  <span>BHK:</span> {singleItem.bhk}
+                </p>
+                <p className="card-text" style={{color:"black", fontFamily: 'Montserrat'}}>
+                  <span>Flat No:</span> {singleItem.flatNo}
+                </p>
+              </div>
+              <div className="card-footer">
+                <a
+                  href="#"
+                  className="btn btn-primary"
+                  style={{
+                    backgroundColor: "#1e2a4a",
+                    borderColor: " #1e2a4a",
+                    padding: "10px 20px",
+                    fontSize: "18px",
+                    margin: "auto",
+                  }}
+                >
+                  View Details
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
-    </div>
-  ))}
-</div>
-
     </>
   );
 };

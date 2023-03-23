@@ -459,6 +459,7 @@ const HeaderMenuContent = ({ float = "" }) => {
         <Link href="/">
           <a
             className={route.pathname === "/" ? "ui-active" : undefined}
+            style={{color:"black", fontFamily: 'Montserrat' , fontSize:"1.5rem"}}
           >
             Home
           </a>
@@ -468,6 +469,7 @@ const HeaderMenuContent = ({ float = "" }) => {
         <Link href="/gallery">
           <a
             className={route.pathname === "/gallery" ? "ui-active" : undefined}
+            style={{fontFamily: 'Montserrat' , fontSize:"1.5rem"}}
           >
             Property Plans
           </a>
@@ -477,6 +479,7 @@ const HeaderMenuContent = ({ float = "" }) => {
         <Link href="/compare">
           <a
             className={route.pathname === "/compare" ? "ui-active" : undefined}
+            style={{ fontFamily: 'Montserrat' , fontSize:"1.5rem"}}
           >
             Features
           </a>
@@ -490,6 +493,7 @@ const HeaderMenuContent = ({ float = "" }) => {
           className="btn flaticon-user"
           data-bs-toggle="modal"
           data-bs-target=".bd-example-modal-lg"
+          style={{fontFamily: 'Montserrat' , fontSize:"1.5rem"}}
         >
           <span className="dn-lg">Contact Us</span>
         </a>

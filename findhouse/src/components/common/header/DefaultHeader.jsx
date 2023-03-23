@@ -37,7 +37,7 @@ const Header = () => {
               src="/assets/images/header-logo2.png"
               alt="header-logo2.png"
             />
-            <span>Heritage Homes</span>
+            <span style={{color:"black", fontFamily: 'Montserrat' , fontSize:"3rem"}}>Heritage Homes</span>
           </a>
         </Link>
         {/* site logo brand */}

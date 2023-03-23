@@ -10,8 +10,8 @@ const LookingItem = ({find}) => {
               <span className={item.icon}>{item.icon}</span>
             </div>
             <div className="details">
-              <h4>{item.title}</h4>
-              <p>{item.text}</p>
+              <h4 style={{color:"black", fontFamily: 'Montserrat'}}>{item.title}</h4>
+              <p style={{color:"gray", textAlign:"center", fontFamily: 'Montserrat', fontSize:"1rem"}}>{item.text}</p>
             </div>
           </div>
         </div>

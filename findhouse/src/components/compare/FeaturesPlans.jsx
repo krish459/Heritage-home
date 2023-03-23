@@ -28,8 +28,8 @@ const FeaturesPlans = ({ find }) => {
                   flex: "1 1 auto",
                 }}
               >
-                <h4>{item.title}</h4>
-                {item.text && <p>{item.text}</p>}
+                <h4 style={{color:"black", fontFamily: 'Montserrat'}}>{item.title}</h4>
+                {item.text && <p style={{color:"gray", textAlign:"center", fontFamily: 'Montserrat'}}>{item.text}</p>}
               </div>
             </div>
           </div>

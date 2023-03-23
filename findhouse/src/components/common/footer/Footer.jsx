@@ -16,40 +16,6 @@ const Footer = () => {
       </div>
       {/* End .col */}
 
-      {/* <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3">
-        <div className="footer_qlink_widget">
-          <h4>Quick Links</h4>
-          <ul className="list-unstyled">
-            <li>
-              <Link href="/">
-                <a>About Us</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Terms & Conditions</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>User’s Guide</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Support Center</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/">
-                <a>Press Info</a>
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div> */}
-      {/* End .col */}
-
       <div className="col-sm-6 col-md-6 col-lg-3 col-xl-4">
         <div className="footer_contact_widget">
           <h6 style={{color:"white"}}>A PROJECT BY</h6>
@@ -87,12 +53,6 @@ const Footer = () => {
                 heritagerealtors9@gmail.com
               </a>
             </li>
-            {/* <li>
-              <a href="#">Collins Street West, Victoria</a>
-            </li>
-            <li>
-              <a href="#">8007, Australia.</a>
-            </li> */}
             <li>
               <a href="tel:+918169110810" style={{ color: "white" }}>
                 +91-8169110810
@@ -108,18 +68,9 @@ const Footer = () => {
       </div>
       {/* End .col */}
 
-      {/* <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3">
-        <div className="footer_social_widget">
-          <h4>Follow us</h4>
-          <ul className="mb30">
-            <Social />
-          </ul>
-          <h4>Subscribe</h4>
-          <SubscribeForm />
-        </div>
-      </div> */}
-    </>
+    </> 
   );
 };
 
 export default Footer;
+

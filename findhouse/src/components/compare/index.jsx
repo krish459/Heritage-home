@@ -188,7 +188,7 @@ const index = () => {
           <div className="row" style={{ marginTop: "2rem" }}>
             <div className="col-lg-6 offset-lg-3">
               <div className="main-title text-center">
-                <h2>Internal Amenities</h2>
+                <h2 style={{color:"black", fontFamily: 'Montserrat'}}>Internal Amenities</h2>
               </div>
             </div>
           </div>
@@ -201,7 +201,7 @@ const index = () => {
       <section className="about-section pb30">
         <div className="container">
           <div className="text-center" style={{ marginBottom: "2rem" }}>
-            <h1>Proximity Areas from peaceful residencial locations</h1>
+            <h1 style={{color:"black", fontFamily: 'Montserrat'}}>Proximity Areas from peaceful residencial locations</h1>
           </div>
           <div className="row">
             <FeaturesPlans find={proximity}/>
