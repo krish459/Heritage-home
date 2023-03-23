@@ -13,18 +13,18 @@ const MobileMenu = () => {
               src="/assets/images/header-logo2.png"
               alt="header-logo2.png"
             />
-            <span className="mt20">FindHouse</span>
+            <span className="mt20">Heritage Homes</span>
           </div>
           {/* main_logo_home2 */}
 
           <ul className="menu_bar_home2">
-            <li className="list-inline-item list_s">
+            {/* <li className="list-inline-item list_s">
               <Link href="/login">
                 <a>
                   <span className="flaticon-user"></span>
                 </a>
               </Link>
-            </li>
+            </li> */}
             <li
               className="list-inline-item"
               data-bs-toggle="offcanvas"

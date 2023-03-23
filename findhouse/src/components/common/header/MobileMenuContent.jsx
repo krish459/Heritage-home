@@ -312,7 +312,7 @@ const MobileMenuContent = () => {
                 src="/assets/images/header-logo2.png"
                 alt="header-logo.png"
               />
-              <span className="brand-text">FindHouse</span>
+              <span className="brand-text">Heritage Homes</span>
             </a>
           </Link>
           {/* End .logo */}
@@ -332,7 +332,7 @@ const MobileMenuContent = () => {
 
       <SidebarContent>
         <Menu>
-          <SubMenu
+          {/* <SubMenu
             title="Home"
             className={
               home.some((page) => page.routerPath === route.pathname)
@@ -355,10 +355,10 @@ const MobileMenuContent = () => {
                 </Link>
               </MenuItem>
             ))}
-          </SubMenu>
+          </SubMenu> */}
           {/* End Home Home */}
 
-          <SubMenu
+          {/* <SubMenu
             title="Listing"
             className={
               listing.some((parent) => {
@@ -397,10 +397,10 @@ const MobileMenuContent = () => {
                 ))}
               </SubMenu>
             ))}
-          </SubMenu>
+          </SubMenu> */}
           {/* End Pages Listing */}
 
-          <SubMenu
+          {/* <SubMenu
             title="Property"
             className={
               property.some((parent) => {
@@ -446,10 +446,10 @@ const MobileMenuContent = () => {
                 ))}
               </SubMenu>
             ))}
-          </SubMenu>
+          </SubMenu> */}
           {/* End Pages Property */}
 
-          <SubMenu
+          {/* <SubMenu
             title="Blog"
             className={
               blog.some(
@@ -477,10 +477,10 @@ const MobileMenuContent = () => {
                 </Link>
               </MenuItem>
             ))}
-          </SubMenu>
+          </SubMenu> */}
           {/* End pages Blog */}
 
-          <SubMenu
+          {/* <SubMenu
             title="Pages"
             className={
               pages.some((page) => page.routerPath === route.pathname)
@@ -503,53 +503,61 @@ const MobileMenuContent = () => {
                 </Link>
               </MenuItem>
             ))}
-          </SubMenu>
+          </SubMenu> */}
           {/* End pages Pages */}
 
           <MenuItem>
-            <Link href="/contact">
-              <a
-                className={
-                  route.pathname === "/contact" ? "ui-active" : undefined
-                }
-              >
-                Contact
+            <Link href="/">
+              <a className={route.pathname === "/" ? "ui-active" : undefined}>
+                Home
               </a>
             </Link>
           </MenuItem>
 
           <MenuItem>
-            <Link href="/login">
+            <Link href="/gallery">
               <a
                 className={
-                  route.pathname === "/login" ? "ui-active" : undefined
+                  route.pathname === "/gallery" ? "ui-active" : undefined
                 }
               >
-                <span className="flaticon-user"></span> Login
+                Property Plans
               </a>
             </Link>
           </MenuItem>
 
           <MenuItem>
-            <Link href="/register">
+            <Link href="/compare">
               <a
                 className={
-                  route.pathname === "/register" ? "ui-active" : undefined
+                  route.pathname === "/compare" ? "ui-active" : undefined
                 }
               >
-                <span className="flaticon-edit"></span> Register
+                Features
               </a>
             </Link>
+          </MenuItem>
+          <MenuItem>
+            {/* <Link href="/compare"> */}
+            <a
+              href="#"
+              className="flaticon-user"
+              data-bs-toggle="modal"
+              data-bs-target=".bd-example-modal-lg"
+            >
+              <span className="">Contact Us</span>
+            </a>
+            {/* </Link> */}
           </MenuItem>
         </Menu>
       </SidebarContent>
 
       <SidebarFooter>
-        <Link href="/create-listing">
+        {/* <Link href="/create-listing">
           <a className="btn btn-block btn-lg btn-thm circle">
             <span className="flaticon-plus"></span> Create Listing
           </a>
-        </Link>
+        </Link> */}
       </SidebarFooter>
     </ProSidebar>
   );
