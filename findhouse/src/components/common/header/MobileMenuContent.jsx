@@ -10,6 +10,7 @@ import {
 } from "react-pro-sidebar";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 const home = [
   {
@@ -301,6 +302,16 @@ const pages = [
 
 const MobileMenuContent = () => {
   const route = useRouter();
+  useEffect(() => {
+    const popupTimer = setTimeout(() => {
+      const contactButton = document.querySelector(".btn.flaticon-user");
+      if (contactButton) {
+        contactButton.click();
+      }
+    }, 5000);
+
+    return () => clearTimeout(popupTimer);
+  }, []);
   return (
     <ProSidebar>
       <SidebarHeader>

@@ -1,28 +1,29 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 const HeaderMenuContent = ({ float = "" }) => {
   const route = useRouter();
 
   // const home = [
-    // {
-    //   id: 1,
-    //   name: "Home 1",
-    //   routerPath: "/",
-    // },
-    // { id: 2, name: "Home 2", routerPath: "/home-2" },
-    // {
-    //   id: 3,
-    //   name: "Home 3",
-    //   routerPath: "/home-3",
-    // },
-    // { id: 4, name: "Home 4", routerPath: "/home-4" },
-    // { id: 5, name: "Home 5", routerPath: "/home-5" },
-    // { id: 6, name: "Home 6", routerPath: "/home-6" },
-    // { id: 7, name: "Home 7", routerPath: "/home-7" },
-    // { id: 8, name: "Home 8", routerPath: "/home-8" },
-    // { id: 9, name: "Home 9", routerPath: "/home-9" },
-    // { id: 10, name: "Home 10", routerPath: "/home-10" },
+  // {
+  //   id: 1,
+  //   name: "Home 1",
+  //   routerPath: "/",
+  // },
+  // { id: 2, name: "Home 2", routerPath: "/home-2" },
+  // {
+  //   id: 3,
+  //   name: "Home 3",
+  //   routerPath: "/home-3",
+  // },
+  // { id: 4, name: "Home 4", routerPath: "/home-4" },
+  // { id: 5, name: "Home 5", routerPath: "/home-5" },
+  // { id: 6, name: "Home 6", routerPath: "/home-6" },
+  // { id: 7, name: "Home 7", routerPath: "/home-7" },
+  // { id: 8, name: "Home 8", routerPath: "/home-8" },
+  // { id: 9, name: "Home 9", routerPath: "/home-9" },
+  // { id: 10, name: "Home 10", routerPath: "/home-10" },
   // ];
 
   // const listing = [
@@ -144,97 +145,18 @@ const HeaderMenuContent = ({ float = "" }) => {
   //   },
   // ];
 
-  // const property = [
-  //   {
-  //     id: 1,
-  //     title: "User Admin",
-  //     items: [
-  //       {
-  //         name: "Dashboard",
-  //         routerPath: "/my-dashboard",
-  //       },
-  //       {
-  //         name: "My Properties",
-  //         routerPath: "/my-properties",
-  //       },
-  //       {
-  //         name: "My Message",
-  //         routerPath: "/my-message",
-  //       },
-  //       {
-  //         name: "My Review",
-  //         routerPath: "/my-review",
-  //       },
-  //       {
-  //         name: "My Favourites",
-  //         routerPath: "/my-favourites",
-  //       },
-  //       {
-  //         name: "My Profile",
-  //         routerPath: "/my-profile",
-  //       },
-  //       {
-  //         name: "My Package",
-  //         routerPath: "/my-package",
-  //       },
-  //       {
-  //         name: "My Saved Search",
-  //         routerPath: "/my-saved-search",
-  //       },
-  //       {
-  //         name: "Add Property",
-  //         routerPath: "/create-listing",
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     id: 2,
-  //     title: "Listing Single",
-  //     items: [
-  //       {
-  //         name: "Single V1",
-  //         routerPath: "/listing-details-v1",
-  //       },
-  //       {
-  //         name: "Single V2",
-  //         routerPath: "/listing-details-v2",
-  //       },
-  //       {
-  //         name: "Single V3",
-  //         routerPath: "/listing-details-v3",
-  //       },
-  //       {
-  //         name: "Single V4",
-  //         routerPath: "/listing-details-v4",
-  //       },
-  //     ],
-  //   },
-  // ];
+  
 
-  // const blog = [
-  //   { id: 1, name: "Blog List 1", routerPath: "/blog-list-1" },
-  //   { id: 2, name: "Blog List 2", routerPath: "/blog-list-2" },
-  //   { id: 3, name: "Blog List 3", routerPath: "/blog-list-3" },
-  //   {
-  //     id: 4,
-  //     name: "Blog Details",
-  //     routerPath: "/blog-details",
-  //   },
-  // ];
+  useEffect(() => {
+    const popupTimer = setTimeout(() => {
+      const contactButton = document.querySelector(".btn.flaticon-user");
+      if (contactButton) {
+        contactButton.click();
+      }
+    }, 5000);
 
-  const pages = [
-    // { id: 1, name: "About Us", routerPath: "/about-us" },
-    // { id: 2, name: "Plans", routerPath: "/gallery" },
-    // { id: 3, name: "Faq", routerPath: "/faq" },                                                                                                                                                                                                                                  
-    // { id: 4, name: "LogIn", routerPath: "/login" },
-    // { id: 5, name: "Compare", routerPath: "/compare" },
-    // { id: 6, name: "Membership", routerPath: "/membership" },
-
-    // { id: 7, name: "Register", routerPath: "/register" },
-    // { id: 8, name: "Service", routerPath: "/service" },
-    // { id: 9, name: "404 Page", routerPath: "/404" },
-    // { id: 10, name: "Terms & Conditions", routerPath: "/terms" },
-  ];
+    return () => clearTimeout(popupTimer);
+  }, []);
 
   return (
     <ul
@@ -459,7 +381,11 @@ const HeaderMenuContent = ({ float = "" }) => {
         <Link href="/">
           <a
             className={route.pathname === "/" ? "ui-active" : undefined}
-            style={{color:"black", fontFamily: 'Montserrat' , fontSize:"1.5rem"}}
+            style={{
+              color: "black",
+              fontFamily: "Montserrat",
+              fontSize: "1.5rem",
+            }}
           >
             Home
           </a>
@@ -469,7 +395,7 @@ const HeaderMenuContent = ({ float = "" }) => {
         <Link href="/gallery">
           <a
             className={route.pathname === "/gallery" ? "ui-active" : undefined}
-            style={{fontFamily: 'Montserrat' , fontSize:"1.5rem"}}
+            style={{ fontFamily: "Montserrat", fontSize: "1.5rem" }}
           >
             Property Plans
           </a>
@@ -479,7 +405,7 @@ const HeaderMenuContent = ({ float = "" }) => {
         <Link href="/compare">
           <a
             className={route.pathname === "/compare" ? "ui-active" : undefined}
-            style={{ fontFamily: 'Montserrat' , fontSize:"1.5rem"}}
+            style={{ fontFamily: "Montserrat", fontSize: "1.5rem" }}
           >
             Features
           </a>
@@ -493,7 +419,7 @@ const HeaderMenuContent = ({ float = "" }) => {
           className="btn flaticon-user"
           data-bs-toggle="modal"
           data-bs-target=".bd-example-modal-lg"
-          style={{fontFamily: 'Montserrat' , fontSize:"1.5rem"}}
+          style={{ fontFamily: "Montserrat", fontSize: "1.5rem" }}
         >
           <span className="dn-lg">Contact Us</span>
         </a>
